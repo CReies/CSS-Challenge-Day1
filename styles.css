@@ -7,3 +7,73 @@
 	margin: 0;
 	padding: 0;
 }
+
+body {
+	background: #212121;
+}
+
+.container {
+	display: flex;
+	padding: 0 12rem;
+	width: 100vw;
+	height: 100vh;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+	gap: 1.7rem;
+}
+
+.card {
+	background-color: #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 1.5rem;
+	gap: 1.5rem;
+	width: 19rem;
+	height: 23rem;
+
+	.img img {
+		border-radius: 100%;
+		width: 6.25rem;
+	}
+
+	.title {
+		justify-content: center;
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+
+		.name {
+			font-family: Oswald, sans-serif;
+			font-size: 1.3rem;
+			color: #212121;
+		}
+
+		.role {
+			font-family: Lato, sans-serif;
+			font-size: 0.8rem;
+			color: #777;
+		}
+	}
+
+	.description {
+		font-family: Lato, sans-serif;
+		text-align: center;
+		font-weight: lighter;
+	}
+
+	.media {
+		display: flex;
+		gap: 1rem;
+
+		& a {
+			color: #aaa;
+
+			& i {
+				font-size: 1.5rem;
+			}
+		}
+	}
+}
